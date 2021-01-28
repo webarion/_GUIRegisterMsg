@@ -23,11 +23,11 @@
 
 ; Version history:
 ;   v1.0.0 - First published version
-;   v1.0.1 - Removing unused variables. Correcting comments
+;   v1.0.1 - Removing unused variables. Correction of comments. Added minified script
 
 ; История версий:
 ;   v1.0.0 - Первая опубликованная версия
-;   v1.0.1 - Удаление неиспользуемых переменных. Корректировка комментариев
+;   v1.0.1 - Удаление неиспользуемых переменных. Корректировка комментариев.  Добавлен минимизированный скрипт
 
 ; USER FUNCTIONS ==================================================================================================================
 ;   _GUIRegisterMsg     - Registers functions for known Windows messages. Multiple functions can be registered
