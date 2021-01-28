@@ -14,8 +14,8 @@ v1.0.0 - First published version
 
 ### User methods ###
 - `_GUIRegisterMsg` - Registers a function for Windows known messages. Multiple functions can be registered
+- `_GUIUnRegisterMsg` - Releases the previously associated function from the message
 - `_Get_GUIRegisterMsg` - Use to view registered messages, functions and the order of their execution
-
 ----------
 
 ## О БИБЛИОТЕКЕ ##
@@ -30,4 +30,5 @@ v1.0.0 - Первая опубликованная версия
 
 ### Пользовательские методы ###
 - `_GUIRegisterMsg` - Регистрирует функцию для известных сообщений Windows. Можно зарегистрировать несколько функций
+- `_GUIUnRegisterMsg` - Освобождает ранее связанную функцию от сообщения
 - `_Get_GUIRegisterMsg` - Используйте для просмотра зарегистрированных сообщений, функций и порядка их выполнения
