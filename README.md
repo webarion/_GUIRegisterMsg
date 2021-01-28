@@ -3,7 +3,7 @@
 Note: English translation by Google Translate
 
 ## ABOUT THE LIBRARY ##
-- **Description:** Library to help perform several registered functions for known Windows messages
+- **Description:** The library extends GUIRegisterMsg. Provides the ability to execute, in the required order, more than one function for known Windows messages
 - **Current version:** 1.0.0
 - **AutoIt Version:** 3.3.14.5
 - **Author:** Webarion
@@ -19,7 +19,7 @@ v1.0.0 - First published version
 ----------
 
 ## О БИБЛИОТЕКЕ ##
- - **Описание:** Библиотека помогающая выполнить несколько зарегистрированных функций для известных сообщений Windows
+ - **Описание:** Библиотека расширяет GUIRegisterMsg. Даёт возможность выполнить, в необходимом порядке, более одной функций для известных сообщений Windows
  - **Текущая версия:** 1.0.0
  - **AutoIt Версия:** 3.3.14.5
  - **Автор:** Webarion
