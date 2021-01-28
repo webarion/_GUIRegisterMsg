@@ -10,8 +10,8 @@ Note: English translation by Google Translate
 - **Links:** [Site](http://webarion.ru "Site"), [Mirror](http://f91974ik.bget.ru "Mirror")
 
 ### Version history: ###
-v1.0.0 - First published version
-v1.0.1 - Removing unused variables. Correcting comments
+- v1.0.0 - First published version
+- v1.0.1 - Removing unused variables. Correcting comments
 
 ### User methods ###
 - `_GUIRegisterMsg` - Registers a function for Windows known messages. Multiple functions can be registered
@@ -27,8 +27,8 @@ v1.0.1 - Removing unused variables. Correcting comments
  - **Ссылки:** [Основной сайт](http://webarion.ru "Основной сайт"), [Зеркало](http://f91974ik.bget.ru "Зеркало")
  
 ### История версий: ###
-v1.0.0 - Первая опубликованная версия
-v1.0.1 - Удаление неиспользуемых переменных. Корректировка комментариев
+- v1.0.0 - Первая опубликованная версия
+- v1.0.1 - Удаление неиспользуемых переменных. Корректировка комментариев
 
 ### Пользовательские методы ###
 - `_GUIRegisterMsg` - Регистрирует функцию для известных сообщений Windows. Можно зарегистрировать несколько функций
