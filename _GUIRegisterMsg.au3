@@ -4,7 +4,7 @@
 ; Name .............: _GUIRegisterMsg
 ; Description ......: The library extends GUIRegisterMsg
 ;                   : Allows to execute, in the required order, more than one function for known Windows messages
-; Current version ..: 1.0.0
+; Current version ..: 1.0.1
 ; AutoIt Version ...: 3.3.14.5
 ; Author ...........: Webarion
 ; Links: ...........: http://webarion.ru, http://f91974ik.bget.ru
@@ -14,7 +14,7 @@
 ; Название .........: _GUIRegisterMsg
 ; Описание .........: Библиотека расширяет GUIRegisterMsg
 ;                   : Даёт возможность выполнить, в необходимом порядке, более одной функции для известных сообщений Windows
-; Текущая версия ...: 1.0.0
+; Текущая версия ...: 1.0.1
 ; AutoIt Версия ....: 3.3.14.5
 ; Автор ............: Webarion
 ; Ссылки: ...........: http://webarion.ru, http://f91974ik.bget.ru
@@ -23,9 +23,11 @@
 
 ; Version history:
 ;   v1.0.0 - First published version
+;   v1.0.1 - Removing unused variables. Correcting comments
 
 ; История версий:
 ;   v1.0.0 - Первая опубликованная версия
+;   v1.0.1 - Удаление неиспользуемых переменных. Корректировка комментариев
 
 ; USER FUNCTIONS ==================================================================================================================
 ;   _GUIRegisterMsg     - Registers functions for known Windows messages. Multiple functions can be registered
@@ -61,15 +63,15 @@ Global $agDB_GUIRegisterMsg[0][2]
 ; ===============================================================================================================================
 Func _GUIRegisterMsg($iMsgID, $sFunc, $iPriority = 0)
 	If Not $sFunc Or $sFunc = '__Kernel_Exec_GUIRegisterMsg' Then Return SetError(1, 0, 0)
+	Local $aFunc, $iFuncIndex, $iUB, $aTmp[1][2]
 	Local $iIndex = __ArrIndCnm_GUIRegisterMsg($agDB_GUIRegisterMsg, $iMsgID)
 	$agDB_GUIRegisterMsg[$iIndex][0] = $iMsgID
-	Local $aFunc = $agDB_GUIRegisterMsg[$iIndex][1]
+	$aFunc = $agDB_GUIRegisterMsg[$iIndex][1]
 	If Not UBound($aFunc) Then Dim $aFunc[0][2]
-	Local $iFuncIndex = __ArrIndCnm_GUIRegisterMsg($aFunc, $sFunc, 1)
+	$iFuncIndex = __ArrIndCnm_GUIRegisterMsg($aFunc, $sFunc, 1)
 	$aFunc[$iFuncIndex][0] = $iPriority
 	$aFunc[$iFuncIndex][1] = $sFunc
-	Local $iUB = UBound($aFunc)
-	Local $aNew[$iUB][2], $aTmp[1][2]
+	$iUB = UBound($aFunc)
 	For $i = 0 To $iUB - 1
 		For $j = $i + 1 To $iUB - 1
 			If $aFunc[$j][0] < $aFunc[$i][0] Then
@@ -135,8 +137,8 @@ EndFunc   ;==>_GUIUnRegisterMsg
 ;              : Use to view the registered functions and the order in which they are performed
 ; ===============================================================================================================================
 Func _Get_GUIRegisterMsg()
-	Local $iUB = UBound($agDB_GUIRegisterMsg), $aFunc
 	Local $aRet[0][3], $iUBR = 0
+	Local $iUB = UBound($agDB_GUIRegisterMsg), $aFunc
 	If Not $iUB Then Return SetError(1, 0, 0)
 	For $i = 0 To $iUB - 1
 		$aFunc = $agDB_GUIRegisterMsg[$i][1]
@@ -190,7 +192,7 @@ EndFunc   ;==>__ArrIndCnm_GUIRegisterMsg
 ; Description .: By index, removes cells from a two-dimensional array
 ; ===============================================================================================================================
 Func __DelArrInd_GUIRegisterMsg(ByRef $aArray, $iIndex)
-	$iUB = UBound($aArray)
+	Local $iUB = UBound($aArray)
 	If $iUB Then
 		For $i = $iIndex To $iUB - 2
 			$aArray[$i][0] = $aArray[$i + 1][0]

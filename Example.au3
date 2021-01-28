@@ -2,7 +2,6 @@
 ; # ABOUT SCRIPT # ==============================================================================================================
 ; Name .............: Example _GUIRegisterMsg
 ; Description ......: An example of using the _GUIRegisterMsg.au3 library
-; Current version ..: 1.0.0
 ; AutoIt Version ...: 3.3.14.5
 ; Author ...........: Webarion
 ; Links: ...........: http://webarion.ru, http://f91974ik.bget.ru
@@ -11,7 +10,6 @@
 ; # О СКРИПТЕ # =================================================================================================================
 ; Название .........: Пример _GUIRegisterMsg
 ; Описание .........: Пример использования библиотеки _GUIRegisterMsg.au3
-; Текущая версия ...: 1.0.0
 ; AutoIt Версия ....: 3.3.14.5
 ; Автор ............: Webarion
 ; Ссылки: ...........: http://webarion.ru, http://f91974ik.bget.ru
