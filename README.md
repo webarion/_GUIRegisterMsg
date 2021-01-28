@@ -4,13 +4,14 @@ Note: English translation by Google Translate
 
 ## ABOUT THE LIBRARY ##
 - **Description:** The library extends GUIRegisterMsg. Allows to execute, in the required order, more than one function for known Windows messages
-- **Current version:** 1.0.0
+- **Current version:** 1.0.1
 - **AutoIt Version:** 3.3.14.5
 - **Author:** Webarion
 - **Links:** [Site](http://webarion.ru "Site"), [Mirror](http://f91974ik.bget.ru "Mirror")
 
 ### Version history: ###
 v1.0.0 - First published version
+v1.0.1 - Removing unused variables. Correcting comments
 
 ### User methods ###
 - `_GUIRegisterMsg` - Registers a function for Windows known messages. Multiple functions can be registered
@@ -20,13 +21,14 @@ v1.0.0 - First published version
 
 ## О БИБЛИОТЕКЕ ##
  - **Описание:** Библиотека расширяет GUIRegisterMsg. Даёт возможность выполнить, в необходимом порядке, более одной функции для известных сообщений Windows
- - **Текущая версия:** 1.0.0
+ - **Текущая версия:** 1.0.1
  - **AutoIt Версия:** 3.3.14.5
  - **Автор:** Webarion
  - **Ссылки:** [Основной сайт](http://webarion.ru "Основной сайт"), [Зеркало](http://f91974ik.bget.ru "Зеркало")
  
 ### История версий: ###
 v1.0.0 - Первая опубликованная версия
+v1.0.1 - Удаление неиспользуемых переменных. Корректировка комментариев
 
 ### Пользовательские методы ###
 - `_GUIRegisterMsg` - Регистрирует функцию для известных сообщений Windows. Можно зарегистрировать несколько функций
