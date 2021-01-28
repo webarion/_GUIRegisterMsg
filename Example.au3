@@ -72,17 +72,20 @@ WEnd
 
 ; To perform functions, open the form menu. Для выполнения функций, откройте меню формы
 Func _Example1($hWnd, $Msg, $wParam, $lParam)
-	MsgBox(0, '', _Tr('Executed function _Example1 for message $ WM_INITMENUPOPUP', 'Выполнена функция _Example1 для сообщения $WM_INITMENUPOPUP'))
+	_ExampleMsgBox(1)
 EndFunc   ;==>_Example1
 
 Func _Example2($hWnd, $Msg)
-	MsgBox(0, '', _Tr('Executed function _Example2 for message $ WM_INITMENUPOPUP', 'Выполнена функция _Example2 для сообщения $WM_INITMENUPOPUP'))
+	_ExampleMsgBox(2)
 EndFunc   ;==>_Example2
 
 Func _Example3()
-	MsgBox(0, '', _Tr('Executed function _Example3 for message $ WM_INITMENUPOPUP', 'Выполнена функция _Example3 для сообщения $WM_INITMENUPOPUP'))
+	_ExampleMsgBox(3)
 EndFunc   ;==>_Example3
 
+Func _ExampleMsgBox($i)
+	MsgBox(0, '', _Tr('Executed function _Example' & $i & ' for message $ WM_INITMENUPOPUP', 'Выполнена функция _Example' & $i & ' для сообщения $WM_INITMENUPOPUP'))
+EndFunc   ;==>_ExampleMsgBox
 
 Func _DemoList()
 	_ArrayDisplay( _Get_GUIRegisterMsg(), _Tr('List of registered functions', 'Список зарегистрированных функции'), '', 0, Default, _Tr('Message', 'Сообщение') & '|' & _Tr('Function name', 'Название функции') & '|' & _Tr('Execution order', 'Порядок выполнения'))
