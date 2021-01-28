@@ -6,6 +6,7 @@
 ; AutoIt Version ...: 3.3.14.5
 ; Author ...........: Webarion
 ; Links: ...........: http://webarion.ru, http://f91974ik.bget.ru
+; Github: ..........: https://github.com/webarion/_GUIRegisterMsg
 ; ===============================================================================================================================
 ; # О СКРИПТЕ # =================================================================================================================
 ; Название .........: Пример _GUIRegisterMsg
@@ -13,7 +14,7 @@
 ; Текущая версия ...: 1.0.0
 ; AutoIt Версия ....: 3.3.14.5
 ; Автор ............: Webarion
-; Сылки: ...........: http://webarion.ru, http://f91974ik.bget.ru
+; Ссылки: ...........: http://webarion.ru, http://f91974ik.bget.ru
 ; ===============================================================================================================================
 
 #include <Array.au3>
@@ -28,8 +29,8 @@ $iMenu = GUICtrlCreateMenu(_Tr('Open this menu', 'Откройте это мен
 $iMenuItem = GUICtrlCreateMenuItem(_Tr('Menu item', 'Пункт меню'), $iMenu)
 $iButton1 = GUICtrlCreateButton(_Tr('Viewing registered functions', 'Просмотр зарегистрированных функций'), 8, 8, 227, 25)
 $iButton2 = GUICtrlCreateButton(_Tr('Change the order of execution of functions', 'Изменить порядок выполнения функций'), 8, 39, 227, 25)
-$iButton3 = GUICtrlCreateButton(_Tr('Menu item', 'Освободить _Example1'), 8, 72, 139, 25)
-$iButton4 = GUICtrlCreateButton(_Tr('Menu item', 'Освободить _Example2'), 8, 100, 139, 25)
+$iButton3 = GUICtrlCreateButton(_Tr('Release _Example1', 'Освободить _Example1'), 8, 72, 139, 25)
+$iButton4 = GUICtrlCreateButton(_Tr('Release _Example2', 'Освободить _Example2'), 8, 100, 139, 25)
 $iButton5 = GUICtrlCreateButton(_Tr('Reset', 'Сброс'), 176, 100, 59, 25)
 GUISetState(@SW_SHOW)
 #EndRegion GUI
