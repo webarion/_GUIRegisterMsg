@@ -21,21 +21,21 @@
 ; ===============================================================================================================================
 
 
-;	Version history:
-;		v1.0.0 - First published version
+; Version history:
+;   v1.0.0 - First published version
 
 ; История версий:
-;		v1.0.0 - Первая опубликованная версия
+;   v1.0.0 - Первая опубликованная версия
 
 ; USER FUNCTIONS ==================================================================================================================
-;		_GUIRegisterMsg     - Registers functions for known Windows messages. Multiple functions can be registered
-;		_GUIUnRegisterMsg   - Releases the function previously associated with the message
-; 	_Get_GUIRegisterMsg - Use to view the registered functions and the order in which they are performed.
+;   _GUIRegisterMsg     - Registers functions for known Windows messages. Multiple functions can be registered
+;   _GUIUnRegisterMsg   - Releases the function previously associated with the message
+;   _Get_GUIRegisterMsg - Use to view the registered functions and the order in which they are performed.
 ; =================================================================================================================================
 ; ПОЛЬЗОВАТЕЛЬСКИЕ ФУНКЦИИ # ======================================================================================================
-; 	_GUIRegisterMsg     - Регистрирует функций для известных сообщений Windows. Можно зарегистрировать несколько функций
-; 	_GUIUnRegisterMsg   - Освобождает ранее связанную с сообщением функцию
-; 	_Get_GUIRegisterMsg - Используйте для просмотра зарегистрированных функций и порядка их выполнения
+;   _GUIRegisterMsg     - Регистрирует функций для известных сообщений Windows. Можно зарегистрировать несколько функций
+;   _GUIUnRegisterMsg   - Освобождает ранее связанную с сообщением функцию
+;   _Get_GUIRegisterMsg - Используйте для просмотра зарегистрированных функций и порядка их выполнения
 ; =================================================================================================================================
 
 ; _GUIRegisterMsg database, system variable for internal use only
