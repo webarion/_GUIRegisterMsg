@@ -2,7 +2,7 @@
 
 ; # ABOUT THE LIBRARY # =========================================================================================================
 ; Name .............: _GUIRegisterMsg
-; Description ......: The library extends the capabilities of GUIRegisterMsg
+; Description ......: The library extends GUIRegisterMsg
 ;                   : Provides the ability to execute, in the required order, more than one function for known Windows messages
 ; Current version ..: 1.0.0
 ; AutoIt Version ...: 3.3.14.5
@@ -11,7 +11,7 @@
 ; ===============================================================================================================================
 ; # О БИБЛИОТЕКЕ # ==============================================================================================================
 ; Название .........: _GUIRegisterMsg
-; Описание .........: Библиотека расширяет возможности GUIRegisterMsg
+; Описание .........: Библиотека расширяет GUIRegisterMsg
 ;                   : Даёт возможность выполнить, в необходимом порядке, более одной функций для известных сообщений Windows
 ; Текущая версия ...: 1.0.0
 ; AutoIt Версия ....: 3.3.14.5
