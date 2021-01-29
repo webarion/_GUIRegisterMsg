@@ -52,14 +52,14 @@ Global $agDB_GUIRegisterMsg[0][2]
 ;              : Позволяет выполнить несколько функций для одного сообщения, а также указать порядок выполнения
 ; Параметры ...: $iMsgID    - Код (ID) сообщения Windows
 ;                $sFunc     - Имя пользовательской функции, которая вызывается при появлении сообщения
-;                $iPriority - Приоритет выполнения указанной функции. Чем меньше это число, тем выше приоритет.
+;                $iPriority - Приоритет выполнения указанной функции. Чем меньше это число, тем выше приоритет
 ; ===============================================================================================================================
 ; #USER FUNCTION# ===============================================================================================================
 ; Description .: Register custom functions for known Windows message IDs (WM_MSG)
 ;              : Allows you to perform multiple functions for one message, as well as specify the order of execution
-; Parameters ..: $iMsgID    - Нет данных (истекло время ожидания отправки данных).
-;                $sFunc     - Имя пользовательской функции, которая вызывается при появлении сообщения
-;                $iPriority - Приоритет выполнения указанной функции. Чем меньше это число, тем выше приоритет.
+; Parameters ..: $iMsgID    - Code (ID) of the message Windows
+;                $sFunc     - Name of the custom function that is called when the message appears
+;                $iPriority - The priority of executing the specified function. The lower the number, the higher the priority
 ; ===============================================================================================================================
 Func _GUIRegisterMsg($iMsgID, $sFunc, $iPriority = 0)
 	If Not $sFunc Or $sFunc = '__Kernel_Exec_GUIRegisterMsg' Then Return SetError(1, 0, 0)
